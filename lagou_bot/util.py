@@ -17,4 +17,4 @@ def post_listing_to_slack(sc, job):
         username='lagou-bot', icon_emoji=':robot_face:'
     )
 
-    logging.log(logging.DEBUG,result)
+    logging.log(logging.DEBUG, result)

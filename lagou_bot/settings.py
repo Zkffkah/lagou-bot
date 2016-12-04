@@ -99,13 +99,15 @@ LOG_LEVEL = 'DEBUG'
 # DUPEFILTER_CLASS = None
 
 # SLACK
-
 # Which slack channel to post the listings into.
 SLACK_CHANNEL = "#android-job-guangzhou"
 
 # SPIDER SETTINGS
 CITY_NAMES = ["广州", "深圳"]
 JOB_NAMES = ["Android"]
+
+# How long we should sleep between scrapes of Lagou.
+SLEEP_INTERVAL = 120 * 60  # 120 minutes
 
 # Any private settings are imported here.
 try:

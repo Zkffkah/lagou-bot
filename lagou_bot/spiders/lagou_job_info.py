@@ -105,7 +105,8 @@ class Lagou_job_info(Spider):
                     item['positionLabels'] = ''
                 yield item
             # 当前页处理完成后生成下一页的request对象
-            page = int(response.meta.get('page')) + 1
-            kd = response.meta.get('kd')
-            yield scrapy.FormRequest(response.url, formdata={'pn': str(page), 'kd': kd}, headers=self.headers,
-                                     meta={'page': page, 'kd': kd}, dont_filter=True)
+            if response.meta.get('page') < 60:
+                page = int(response.meta.get('page')) + 1
+                kd = response.meta.get('kd')
+                yield scrapy.FormRequest(response.url, formdata={'pn': str(page), 'kd': kd}, headers=self.headers,
+                                         meta={'page': page, 'kd': kd}, dont_filter=True)

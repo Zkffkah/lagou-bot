@@ -6,7 +6,7 @@ import json
 
 def get_proxies():
     p = Proxies()
-    p.get_proxies(100, 2)
+    p.get_proxies(2000, 2)
     # quantity: 数量
     # type: 类型 (1.国内高匿代理 2.国内普通代理 3.国外高匿代 4.国外普通代理)
     proxy_results = p.get_result()
@@ -52,18 +52,5 @@ def verify_lagou(proxy):
 
 
 if __name__ == '__main__':
-    # time.sleep(3600)
-    # while 1:
-    #     proxies = []
-    #     with open('proxies.txt', 'r') as f:
-    #         for line in f:
-    #             if verify_lagou(line.strip()):
-    #                 proxies.append(line.strip())
-    #     with open('proxies.txt', 'w') as f:
-    #         if len(proxies) != 0:
-    #             for proxy in set(proxies):
-    #                 f.write(str(proxy) + '\n')
-
     get_proxies()
-    # time.sleep(3600)
 

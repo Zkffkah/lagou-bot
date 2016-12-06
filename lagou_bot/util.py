@@ -3,11 +3,11 @@ import logging
 from lagou_bot import settings
 
 
-def post_listing_to_slack(sc, job):
+def post_job_to_slack(sc, job):
     """
-    Posts the listing to slack.
+    Posts the job to slack.
     :param sc: A slack client.
-    :param listing: A record of the listing.
+    :param job: A record of the job.
     """
     desc = "{0} | {1} | {2} | {3} | {4} | <{5}>".format(job["companyShortName"], job["workYear"], job["salary"],
                                                         job["financeStage"], job["positionName"],

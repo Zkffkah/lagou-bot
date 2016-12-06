@@ -4,8 +4,6 @@ import time
 import logging
 
 
-# logger = logging.getLogger()
-
 class ProxyMiddleWare(object):
     """docstring for ProxyMiddleWare"""
 

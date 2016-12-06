@@ -92,7 +92,7 @@ ITEM_PIPELINES = {
 # HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
 LOG_ENABLED = True
-LOG_FILE = 'log/lagou_bot_info.log'
+# LOG_FILE = 'log/lagou_bot_info.log'
 LOG_LEVEL = 'DEBUG'
 
 # DUPEFILTER_DEBUG = True

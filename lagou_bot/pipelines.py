@@ -10,7 +10,7 @@ from scrapy.exceptions import DropItem
 from lagou_bot.create_db import Base, Job
 from slackclient import SlackClient
 from lagou_bot import settings
-from lagou_bot.util import post_listing_to_slack
+from lagou_bot.util import post_job_to_slack
 
 
 class LagouJobInfoDbPipeline(object):
@@ -83,5 +83,5 @@ class LagouJobSendMsgPipeline(object):
         # Create a slack client.
 
         # Post each result to slack.
-        post_listing_to_slack(self.slackClient, item)
+        post_job_to_slack(self.slackClient, item)
         return item

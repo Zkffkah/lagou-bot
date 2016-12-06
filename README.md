@@ -6,6 +6,8 @@ This is a scrapy based bot that will scrape lagou.com for real-time jobs matchin
 This will let you quickly see the best new jobs at the first time.  You can adjust the settings to change your job name keywords and cities.
 
 
+<img src="/art/screenshot.png" alt="screenshot" title="screenshot" height="486" />
+
 Settings
 --------------------
 
@@ -27,16 +29,12 @@ Before using this bot, you'll need a Slack team, a channel for the bot to post i
 Configuration
 --------------------
 
-## Manual
-
 * Create a file called `private.py` in this folder.
     * Add a value called `SLACK_TOKEN` that contains your Slack API token. See 'private.py.example' for example.
     * Add any other values you want to `private.py`.
 
 Installation + Usage
 --------------------
-  
-## Manual
 
 * Install Python 3 and other required package.
 * Install the Python requirements with `pip3 install -r requirements.txt`.

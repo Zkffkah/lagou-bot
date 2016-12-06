@@ -5,6 +5,8 @@ This is a scrapy based bot that will scrape lagou.com for real-time jobs matchin
 
 This will let you quickly see the best new jobs at the first time.  You can adjust the settings to change your job name keywords and cities.
 
+How It Looks
+--------------------
 
 <img src="/art/screenshot.png" alt="screenshot" title="screenshot" height="486" />
 
